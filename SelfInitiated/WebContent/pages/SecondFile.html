@@ -1,0 +1,316 @@
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,600,700' id='displaywp-font-opensans-css' media='all' rel='stylesheet' type='text/css'/>
+<style id='page-skin-1' type='text/css'><!--
+
+    </style>
+<div class='container' id='header-container'>
+<div class='navbar navbar-default navbar-static-top main-top-nav' role='banner'>
+<div class='navbar-header'>
+<button class='navbar-toggle' data-target='.bs-navbar-collapse2' data-toggle='collapse' type='button'>
+<span class='sr-only'>
+              Toggle navigation
+            </span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</button>
+<div class='header section' id='blog-title'><div class='widget Header' id='Header1'>
+<div id='header-inner'>
+<div class='titlewrapper'>
+<h1 class='title'>
+Code Seekers
+</h1>
+</div>
+<div class='descriptionwrapper'>
+<p class='description'>
+<span>
+</span>
+</p>
+</div>
+</div>
+</div></div>
+</div>
+<nav class='collapse navbar-collapse bs-navbar-collapse2' role='navigation'>
+<ul class='nav navbar-nav navbar-right'>
+<li class='open'>
+<a href='#/'>
+                home
+              </a>
+</li>
+<li>
+<a href='#/Algorithm'>
+                Algo
+              </a>
+</li>
+<li>
+<a href='#/'>
+                Data Structure
+              </a>
+</li>
+<li>
+<a href='#/BlogsPage'>
+                Blog
+              </a>
+</li>
+<li>
+<a  data-toggle="modal" data-target="#myModal" style="cursor: pointer;">
+                Login/SignUp 
+</a>
+
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<link href="content/popup.css" rel="stylesheet"/>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    x</button>
+                <h4 class="modal-title" id="myModalLabel">
+                    Login/Registration - <a href="">letsDoIt.com</a></h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" id="myTabs">
+                            <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                            <li><a href="#Registration" data-toggle="tab">Registration</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="Login">
+                                <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="email" class="col-sm-2 control-label">
+                                        Username</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" data-ng-model="login.username" class="form-control" id="email1" placeholder="Username" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1" class="col-sm-2 control-label">
+                                        Password</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" data-ng-model="login.password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <button type="submit" class="btn btn-primary btn-sm" data-ng-click="logIn(login)">
+                                            Submit</button>
+                                        <a href="javascript:;">Forgot your password?</a>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane" id="Registration">
+                                <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="email" class="col-sm-2 control-label">
+                                        Name</label>
+                                    <div class="col-sm-10">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <select class="form-control">
+                                                    <option>Mr.</option>
+                                                    <option>Ms.</option>
+                                                    <option>Mrs.</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <input type="text" data-ng-model="signup.name" class="form-control" placeholder="Name" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="col-sm-2 control-label">
+                                        Email</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="email" placeholder="Username" data-ng-model="signup.email" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mobile" class="col-sm-2 control-label">
+                                        Mobile</label>
+                                    <div class="col-sm-10">
+                                        <input type="tel" class="form-control" id="mobile" placeholder="Mobile" data-ng-model="signup.mobile" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-sm-2 control-label">
+                                        Password</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" id="password" placeholder="Password" data-ng-model="signup.password"/>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <button type="button" class="btn btn-primary btn-sm" data-ng-click="SignUp(signup)">
+                                            Save & Continue</button>
+                                        <button type="button" class="btn btn-default btn-sm">
+                                            Cancel</button>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div id="OR" class="hidden-xs">
+                            OR</div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row text-center sign-with">
+                            <div class="col-md-12">
+                                <h3>
+                                    Sign in with</h3>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="btn-group btn-group-justified">
+                                    <a href="#" class="btn btn-primary">Facebook</a> <a href="#" class="btn btn-danger">
+                                        Google</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end top-page-menu-->
+<div class='searchknowl' style="background: hsla(33, 90%, 58%, 0.8);">
+<h2>
+        Search Knowledge Base
+      </h2>
+<script type="text/javascript">
+  </script>
+<style type="text/css">
+ .typeahead, .tt-query, .tt-hint {
+	border: 2px solid #CCCCCC; 
+	border-radius: 8px;
+	font-size: 20px;
+	height: 30px;
+	line-height: 30px;
+	outline: medium none;
+	padding: 8px 12px;
+	width: 396px;
+	position: fixed;
+	
+} 
+.typeahead {
+    background-color: white;
+}
+.typeahead:focus {
+	border: 2px solid #0097CF;
+}
+.tt-query {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+.tt-hint {
+	color: #999999;
+	height: 40px;
+	width: 253px;
+	margin-left:53px;
+}
+.tt-dropdown-menu {
+	background-color: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	margin-top: 12px;
+	padding: 8px 0;
+	width: 253px;
+	margin-left: 53px;
+}
+.tt-suggestion {
+	font-size: 15px;
+	line-height: 10px;
+	padding: 0px 8px;
+	height: 36px;
+}
+.tt-suggestion.tt-is-under-cursor {
+	background-color: #0097CF; 
+	color: #FFFFFF;
+}
+.tt-suggestion p {
+	margin: 0;
+} 
+</style>      
+<form class='nav-form-s'>
+<div class='form-group' style="height: 0px; margin-bottom: 8px;">
+<input class='form-control typeahead tt-query' id='q' spellcheck="false" autocomplete="off" type='text' style="height: 40px; width: 255px; margin-left: 53px;"/>
+</div> 
+<button type="button" class="btn-sm btn-primary" style="margin-top: -6px;margin-left: 310px;"data-ng-click="gotoPage()">Go to Page</button>
+</form>
+</div>
+<div id='features-list'>
+<div class='container'>
+<div class='row stacked'>
+<div class='col-xs-12 col-sm-3 col-md-3 col-lg-3 special-icon'>
+<div class='special-icon-img'>
+<img alt='' src='content/images/Java.png'/>
+<h3>
+                Codes
+              </h3>
+<p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
+              </p>
+<a class='btn btn-vilot btn-large' href=''>
+                Read more
+              </a>
+</div>
+</div>
+<div class='col-xs-12 col-sm-3 col-md-3 col-lg-3 special-icon'>
+<div class='special-icon-img'>
+<img alt='' src='content/images/NOTEPAD.png' style="margin-left: 10px;"/>
+<h3>
+                Blog
+              </h3>
+<p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
+              </p>
+<a class='btn btn-vilot btn-large' href='#/BlogsPage'>
+                Read more
+              </a>
+</div>
+</div>
+<div class='col-xs-12 col-sm-3 col-md-3 col-lg-3 special-icon'>
+<div class='special-icon-img'>
+<img alt='' src='content/images/FAQ.png'/>
+<h3>
+                Questionarre
+              </h3>
+<p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
+              </p>
+<a class='btn btn-vilot btn-large' href='#/Questionarre'>
+                Read more
+              </a>
+</div>
+</div>
+<div class='col-xs-12 col-sm-3 col-md-3 col-lg-3 special-icon'>
+<div class='special-icon-img'>
+<img alt='' src='content/images/Database.png'/>
+<h3>
+                Downloads
+              </h3>
+<p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
+              </p>
+<a class='btn btn-vilot btn-large' href=''>
+                Read more
+              </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="externalJS/typeahead.min.js"></script>
